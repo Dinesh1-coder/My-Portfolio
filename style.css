@@ -283,7 +283,7 @@ body {
     padding-right: 15px; /* Spacing */
 }
 
-.education-content h3.title {
+.education-content h4.title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
@@ -618,4 +618,5 @@ body {
         padding: 10px 20px;
         font-size: 14px;
     }
+
 }
