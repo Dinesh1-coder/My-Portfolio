@@ -272,6 +272,9 @@ body {
 
 .education-content .title {
     color: #fed700;
+    font-size: 40px;
+    line-height: 70px;
+    text-transform: capitalize;
 }
 
 .education-content .row .education,
@@ -620,3 +623,4 @@ body {
     }
 
 }
+
