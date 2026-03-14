@@ -500,7 +500,7 @@ body {
     position: fixed;
     top: 18px;
     right: 18px;
-    z-index: 1004;
+    z-index: 1010;
     cursor: pointer;
   }
 
@@ -524,7 +524,7 @@ body {
     background-color: #2a2a2a;
     padding-top: 80px;
     transition: right 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 1005;
     box-shadow: -5px 0 20px rgba(0,0,0,0.7);
     overflow-y: auto;
   }
@@ -547,7 +547,7 @@ body {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.55);
-    z-index: 999;
+    z-index: 1000;
   }
 
   .menu-overlay.active { display: block; }
