@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ul { list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #202020;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/*--------------------------- Header ---------------------------*/
+
+.header-area {
+  padding: 25px 0;
+  transition: padding .3s;
+}
+
+.header-area.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #202020;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo .fa-bolt {
+  color: #fed700;
+  font-size: 19.5px;
+  position: absolute;
+  top: 60%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.signature {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li { margin: 0 15px; }
+
+.header ul li a {
+  text-transform: capitalize;
+  display: block;
+}
+
+.header ul li a.active,
+.header ul li a:hover { color: #fed700; }
+
+/* Mobile menu toggle — hidden on desktop */
+.menu-toggle { display: none; }
+
+.open-icon,
+.close-icon {
+  font-size: 24px;
+  color: #fed700;
+  cursor: pointer;
+}
+
+/*--------------------------- Home ---------------------------*/
+
+.FirstElement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+.FirstElement .profile-photo {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid #444444;
+  box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
+
+.FirstElement .profile-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.FirstElement .profile-photo img:hover { transform: scale(1.2); }
+
+.profile-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.profile-text h5 { color: #e5e5e5; font-size: 14px; }
+.profile-text h1 { color: #fed700; font-size: 3rem; }
+.profile-text p  { color: #e5e5e5; margin-bottom: 20px; }
+
+.profile-text .social i {
+  color: #e5e5e5;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.profile-text .social i:hover {
+  color: #fed700;
+  transform: rotate(360deg);
+}
+
+/*--------------------------- Button ---------------------------*/
+
+.btn-group { margin: 30px 0; }
+
+.btn-group .btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  margin: 5px 7px 5px 0;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 10px 10px -8px rgba(0,0,0,0.78);
+}
+
+.btn.active { border-color: #fed700; }
+
+/*--------------------------- About ---------------------------*/
+
+.about-area {
+  padding-top: 200px;
+  background-color: #202020;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.about-content { flex-basis: 60%; }
+
+.about-content h4 {
+  color: #fed700;
+  font-size: 40px;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+
+.about-content ul { color: #fff; text-align: justify; }
+
+.about-content ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.about-skills {
+  flex-basis: 35%;
+  padding-top: 50px;
+}
+
+.about-skills ul li {
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.about-skills ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/*--------------------------- Education & Internship ---------------------------*/
+
+.education-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 100px;
+  padding-top: 60px;
+}
+
+.education-content .title {
+  color: #fed700;
+  font-size: 40px;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+
+.education-content .row .education,
+.education-content .row .internship {
+  color: #e5e5e5;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+  padding-right: 15px;
+}
+
+.education-content h4.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.education-content .row .timeline {
+  padding: 30px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.education-content .row .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.education-content .row .internship .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+
+.education-content .row .timeline-item:last-child { padding-bottom: 0; }
+
+.education-content .row .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #fed700;
+}
+
+.education-content .row .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.education-content .row .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.education-content .row .internship .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.education-content .row .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/*--------------------------- Projects ---------------------------*/
+
+.project-content { padding: 90px 0; }
+
+.project-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.project-title h4 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+
+.project-title p { color: #e5e5e5; }
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  flex-basis: 30%;
+  min-width: 280px;
+  transition: .3s;
+  flex-grow: 1;
+}
+
+.project i {
+  background-color: #fed700;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  font-size: 26px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.project h4 {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.project p { text-align: justify; }
+.project:hover { border-color: #fed700; }
+
+/*--------------------------- Contact ---------------------------*/
+
+.contact-content {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-content .contact-title h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #fed700;
+  padding-bottom: 10px;
+}
+
+.contact-content .contact-title p { padding-bottom: 20px; }
+
+.contact {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.contact .submit {
+  width: auto;
+  background-color: #fed700;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.contact .submit:hover { transform: scale(1.1); }
+
+#msg {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+/*--------------------------- Footer ---------------------------*/
+
+.footer {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0 26px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .message {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.copyright { font-size: 12px; }
+
+/*--------------------------- Responsive ---------------------------*/
+
+/* Tablet (≤ 991px) */
+@media screen and (max-width: 991px) {
+  .FirstElement {
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .profile-text {
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-content,
+  .about-skills {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .project { flex-basis: 45%; }
+}
+
+/* Mobile (≤ 768px) */
+@media screen and (max-width: 768px) {
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1002;
+  }
+
+  .open-icon,
+  .close-icon {
+    font-size: 26px;
+    color: #fed700;
+    cursor: pointer;
+  }
+
+  /* Slide-in nav */
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #202020;
+    padding-top: 80px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  }
+
+  .header ul.active { right: 0; }
+
+  .header ul li {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .header ul li a { font-size: 20px; }
+
+  /* Typography scale-down */
+  .profile-text h1       { font-size: 2rem; }
+  .about-content h4      { font-size: 28px; line-height: 1.3; }
+  .education-content .title { font-size: 28px; line-height: 1.3; }
+  .project-title h4      { font-size: 28px; }
+  .contact-content .contact-title h4 { font-size: 28px; }
+
+  /* Stack projects */
+  .project {
+    flex-basis: 100%;
+    min-width: unset;
+  }
+
+  .btn-group .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* About padding reduce */
+  .about-area { padding-top: 100px; }
+}
+
+/* Small mobile (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .profile-text h1 { font-size: 1.6rem; }
+
+  .FirstElement .profile-photo {
+    width: 180px;
+    height: 220px;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+  }
+}
