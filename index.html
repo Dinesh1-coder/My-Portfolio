@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinesh Kumar V — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="dk.png"/>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner">
+          <a href="#home" class="nav-dk">DK</a>  
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+            <i class="fa fa-moon" id="themeIcon"></i>
+          </button>
+          
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="home-inner">
+        <div class="home-photo-wrap">
+          <div class="photo-ring">
+            <img src="photo.jpeg" alt="Dinesh Kumar" class="home-photo" />
+          </div>
+        </div>
+        <div class="home-text">
+          <p class="greeting">Hi I'm</p>
+          <h1 class="hero-name">Dinesh <span>Kumar</span></h1>
+          <div class="hero-roles">
+            <span class="role-tag">Java Developer</span>
+            <span class="role-tag">Web Developer</span>
+            <span class="role-tag">Problem Solver</span>
+          </div>
+          <p class="hero-desc">
+            Welcome to my portfolio website! I'm a passionate and aspiring
+            fullstack developer with a strong desire to create innovative
+            solutions and push the boundaries of technology. With a deep love
+            for coding and problem-solving, I am constantly seeking
+            opportunities to learn and grow in this ever-evolving field.
+          </p>
+          <div class="home-btns">
+            <a href="DK-RESUME.pdf" download class="btn btn-primary"
+              ><i class="fa fa-download"></i>&nbsp; Download CV</a
+            >
+            <a
+              href="https://wa.me/919600588274"
+              target="_blank"
+              class="btn btn-outline"
+              ><i class="fab fa-whatsapp"></i>&nbsp; Contact</a
+            >
+          </div>
+          <div class="social-row">
+            <a
+              href="mailto:dineshkumarsudhav@gmail.com"
+              title="Email"
+              class="soc-icon"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://github.com/Dinesh1-coder"
+              target="_blank"
+              title="GitHub"
+              class="soc-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dineshkumar-819003380"
+              target="_blank"
+              title="LinkedIn"
+              class="soc-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://leetcode.com/u/oBr2nJH0I1/"
+              target="_blank"
+              title="LeetCode"
+              class="soc-icon"
+              ><i class="fa fa-code"></i
+            ></a>
+            <a
+              href="https://www.geeksforgeeks.org/profile/dk748k9qa?tab=activity"
+              target="_blank"
+              title="GeeksForGeeks"
+              class="soc-icon"
+              ><i class="fa fa-laptop-code"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About <span>Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <ul class="about-list">
+              <li>
+                I am currently pursuing my final year Bachelor's Degree in
+                Computer Science. I have built a solid foundation in software
+                development, particularly in areas such as Java, SQL, Git, and
+                GitHub.
+              </li>
+              <li>
+                My expertise allows me to approach projects with confidence and
+                deliver high-quality results. I believe strongly in continuous
+                learning and staying adaptable in the ever-evolving world of
+                software engineering.
+              </li>
+              <li>
+                I actively seek opportunities to expand my knowledge and skills,
+                embracing new technologies. Feel free to explore my work and get
+                in touch if you have any questions or opportunities to
+                collaborate.
+              </li>
+            </ul>
+          </div>
+          <div class="about-info">
+            <div class="info-card">
+              <div class="info-row">
+                <span class="info-label">Name</span
+                ><span class="info-val">Dinesh Kumar</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Age</span
+                ><span class="info-val">20</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">From</span
+                ><span class="info-val">India</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Email</span
+                ><span class="info-val small">dineshkumarsudhav@gmail.com</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Availability</span
+                ><span class="info-val avail-badge">Fulltime</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Experience</span
+                ><span class="info-val">&lt; 1 Year</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education & <span>Internship</span></h2>
+        </div>
+        <div class="edu-grid">
+          <div class="timeline-col">
+            <h3 class="col-head">
+              <i class="fa fa-graduation-cap"></i> Education
+            </h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <h4>B.Sc., CS — 85%</h4>
+                  <p>Muthayammal Memorial College Of Arts And Science</p>
+                  <span class="tl-date"
+                    ><i class="fa fa-calendar-alt"></i> 2023 – 2026</span
+                  >
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <h4>HSC — 75%</h4>
+                  <p>Government Boys Higher Secondary School</p>
+                  <span class="tl-date"
+                    ><i class="fa fa-calendar-alt"></i> 2021 – 2023</span
+                  >
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <h4>SSLC — Pass</h4>
+                  <p>Bharathi Higher Secondary School</p>
+                  <span class="tl-date"
+                    ><i class="fa fa-calendar-alt"></i> 2019 – 2021</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-col">
+            <h3 class="col-head"><i class="fa fa-briefcase"></i> Internship</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <h4>Digital Marketing</h4>
+                  <p class="tl-org">Social Platform</p>
+                  <span class="tl-date"
+                    ><i class="fa fa-calendar-alt"></i> June 2025</span
+                  >
+                  <ul class="tl-points">
+                    <li>
+                      Digital marketing is the practice of promoting products or
+                      services using digital channels such as websites, social
+                      media, search engines, email, and mobile apps.
+                    </li>
+                    <li>
+                      Involves strategies like SEO, SEM, content marketing, and
+                      email campaigns to reach and engage targeted audiences.
+                    </li>
+                    <li>
+                      Data-driven approach enabling businesses to track
+                      performance in real time and optimize campaigns for better
+                      ROI.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span>Projects</span></h2>
+          <p class="section-sub">
+            Discover my projects, where creativity meets innovation
+          </p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="proj-icon-wrap"><i class="fa fa-train"></i></div>
+            <h3>Train Ticket Booking System</h3>
+            <p>
+              A full-stack train ticket booking web application with Java
+              backend, implementing automated Confirmed, RAC, and Waiting list
+              management with real-time seat allocation and REST API
+              integration. Deployed on Render with Docker and Google Sheets API
+              for live data persistence.
+            </p>
+            <div class="proj-tags">
+              <span>Java</span><span>Spring Boot</span><span>REST API</span
+              ><span>HTML/CSS/JS</span><span>Docker</span>
+            </div>
+            <div class="proj-btns">
+              <a
+                href="https://train-booking-sshp.onrender.com/"
+                target="_blank"
+                class="proj-btn live-btn"
+                ><i class="fa fa-external-link-alt"></i> Live</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-icon-wrap"><i class="fa fa-user-circle"></i></div>
+            <h3>Portfolio Website</h3>
+            <p>
+              A responsive personal portfolio website built with HTML, CSS, and
+              JavaScript. Showcases projects, education, skills, and contact
+              details with smooth scroll animations, mobile-friendly design, and
+              modern dark aesthetics.
+            </p>
+            <div class="proj-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>Responsive</span>
+            </div>
+            <div class="proj-btns">
+              <a
+                href="https://github.com/Dinesh1-coder"
+                target="_blank"
+                class="proj-btn"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact <span>Me</span></h2>
+          <p class="section-sub">Get In Touch</p>
+        </div>
+        <div class="contact-wrap">
+          <form
+            class="contact-form"
+            id="contactForm"
+            name="submitToGoogleSheet"
+          >
+            <div class="form-row">
+              <input type="text" name="NAME" placeholder="Your Name" required />
+            </div>
+            <div class="form-row">
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <input type="text" name="SUBJECT" placeholder="Subject" />
+            </div>
+            <div class="form-row">
+              <textarea
+                name="MESSAGE"
+                placeholder="Your Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-btn">
+              <i class="fa fa-paper-plane"></i>&nbsp; Send Message
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+          <div class="contact-info">
+            <a href="mailto:dineshkumarsudhav@gmail.com" class="ci-item">
+              <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-val">dineshkumarsudhav@gmail.com</p>
+              </div>
+            </a>
+            <a
+              href="https://wa.me/919600588274"
+              target="_blank"
+              class="ci-item"
+            >
+              <div class="ci-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="ci-label">WhatsApp</p>
+                <p class="ci-val">+91 96005 88274</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/Dinesh1-coder"
+              target="_blank"
+              class="ci-item"
+            >
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="ci-label">GitHub</p>
+                <p class="ci-val">Dinesh1-coder</p>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dineshkumar-819003380"
+              target="_blank"
+              class="ci-item"
+            >
+              <div class="ci-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <p class="ci-label">LinkedIn</p>
+                <p class="ci-val">Dinesh Kumar V</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Thanks for visiting — happy coding! 🚀</p>
+      <p class="copy">&copy; 2025 Dinesh Kumar V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
